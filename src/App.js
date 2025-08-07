@@ -28,7 +28,7 @@ function App() {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:8000/forecast/', formData);
+      const res = await axios.post('https://supply-chain-bk-2.onrender.com/forecast/', formData);
       // Format dates
       const formatted = res.data.forecast.map(item => ({
         ...item,
